@@ -1,0 +1,25 @@
+#### Authenticate a User
+POST http://localhost:8080/api/v1/auth/authenticate
+Content-Type: application/json
+
+{
+    "username": "user",
+    "password": "1234"
+}
+
+
+### Register A User
+POST http://localhost:8080/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "firstname": "User",
+  "lastname": "One",
+  "username": "user",
+  "password": "1234",
+  "role": "User"
+}
+
+##### Access Protected Route
+GET http://localhost:8080/api/v1/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjk4NzE3ODUyLCJleHAiOjE2OTg4MDQyNTJ9.7_p1X-SPSguJghKW7falYS7ngWiN4CpbtmGl1BqF9Lk

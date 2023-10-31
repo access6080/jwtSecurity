@@ -1,0 +1,6 @@
+spring:
+  application:
+    security:
+      jwt:
+        expiration: 86400000 # a day
+        
